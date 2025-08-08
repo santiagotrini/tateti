@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0.4em;
+}
+
+body > button {
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+.board button {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.board button:disabled {
+  color: black;
+}
+
+.board {
+  margin-top: 1em;
+  display: grid;
+  gap: 5px;
+  grid-template: repeat(3, 75px) / repeat(3, 75px);
+}
