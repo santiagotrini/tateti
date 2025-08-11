@@ -19,6 +19,9 @@ function handleClick(e) {
   let winner = checkWinner();
   if (winner) 
     document.querySelector('h1').textContent = `Ganó ${winner}! 😎`;
+  else if (c == 9)
+    document.querySelector('h1').textContent = `Empate 😐​`;
+
 }
 
 function checkWinner() {
